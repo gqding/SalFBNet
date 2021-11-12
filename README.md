@@ -2,6 +2,6 @@
 
 SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks
 
-Guanqun Ding, Nevrez ̇Imamo ̆glu, Ali Caglayan, MasahiroMurakawa, Ryosuke Nakamura
+Guanqun Ding, Nevrez Imamoglu, Ali Caglayan, Masahiro Murakawa, Ryosuke Nakamura
 
 ## Getting Started
