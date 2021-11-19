@@ -30,17 +30,22 @@ DUT-OMRON | 5,168 | - | - | 5,168 | ~151.8MB | [download link](http://saliencyde
 TORONTO | 120 | - | - | 120 | ~92.3MB | [download link](http://www-sop.inria.fr/members/Neil.Bruce/) | [paper](http://www-sop.inria.fr/members/Neil.Bruce/NIPS2005_0081.pdf)
 Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download link]() | [paper]()
 
-* Training and Validation sets are randomly split by this work.
-We will release our Pseudo-Saliency dataset after our paper be published.
+* \*Training and Validation sets are randomly split by this work.
+* We will release our Pseudo-Saliency dataset after our paper be published.
 
 ## Performance Evaluation
 
+### 1. Visulization Results
 <img src="Figs/visualization.png" alt="input" style="width:600px">
 
+### 2. Testing Performance on DUT-OMRON, PASCAL-S, and TORONTO
 <img src="Figs/performance123.png" alt="input" style="width:600px">
 
+### 3. Testing Performance on SALICON
 <img src="Figs/performance4.png" alt="input" style="width:600px">
 
+### 4. Testing Performance on MIT300
 <img src="Figs/performance5.png" alt="input" style="width:600px">
 
+### 5. Efficiency Comparison
 <img src="Figs/efficiency.png" alt="input" style="width:600px">
