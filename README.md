@@ -33,6 +33,15 @@ Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download li
 * \*Training and Validation sets are randomly split by this work.
 * We will release our Pseudo-Saliency dataset after our paper is published.
 
+### 4. Downloads
+- Our pre-trained models
+
+    It will be available soon.
+        
+- Our testing saliency results on public datasets
+
+    You can download our testing saliency resutls from this [link]().
+
 ## Performance Evaluation
 
 ### 1. Visulization Results
