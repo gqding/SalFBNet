@@ -16,7 +16,7 @@ pip install scikit-learn scipy tensorboard tqdm
 pip install torchSummeryX
 ```
 ### 2. Run
-Runing codes will be released after our paper be published.
+The running code will be released after our paper is published.
 
 ### 3. Datasets
 
@@ -31,7 +31,7 @@ TORONTO | 120 | - | - | 120 | ~92.3MB | [download link](http://www-sop.inria.fr/
 Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download link]() | [paper]()
 
 * \*Training and Validation sets are randomly split by this work.
-* We will release our Pseudo-Saliency dataset after our paper be published.
+* We will release our Pseudo-Saliency dataset after our paper is published.
 
 ## Performance Evaluation
 
