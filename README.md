@@ -1,8 +1,10 @@
 # SalFBNet
 
-SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks
+SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks, 2021
 
 Guanqun Ding, Nevrez Imamoglu, Ali Caglayan, Masahiro Murakawa, Ryosuke Nakamura
+
+<img src="Figs/salfbnet.png" alt="input" style="width:600px">
 
 ## Getting Started
 ### 1. Installation
@@ -18,3 +20,11 @@ Runing codes will be released after our paper pablished.
 ## Datasets
 
 ## Performance Evaluation
+
+<img src="Figs/visualization.png" alt="input" style="width:600px">
+
+<img src="Figs/performance123.png" alt="input" style="width:600px">
+
+<img src="Figs/performance4.png" alt="input" style="width:600px">
+
+<img src="Figs/performance5.png" alt="input" style="width:600px">
