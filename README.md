@@ -28,7 +28,7 @@ MIT1003 | 1003 | 900* | 103* | - | ~178.7MB | [download link](http://people.csai
 PASCAL-S | 850 | - | - | 850 | ~108.3MB | [download link](http://cbs.ic.gatech.edu/salobj/) | [paper](https://arxiv.org/pdf/1406.2807)
 DUT-OMRON | 5,168 | - | - | 5,168 | ~151.8MB | [download link](http://saliencydetection.net/dut-omron/) | [paper](http://saliencydetection.net/dut-omron/download/manifold.pdf)
 TORONTO | 120 | - | - | 120 | ~92.3MB | [download link](http://www-sop.inria.fr/members/Neil.Bruce/) | [paper](http://www-sop.inria.fr/members/Neil.Bruce/NIPS2005_0081.pdf)
-Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download link]() | [paper]()
+Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download link] | [paper]
 
 * \*Training and Validation sets are randomly split by this work.
 * We will release our Pseudo-Saliency dataset after our paper is published.
@@ -40,7 +40,7 @@ Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download li
         
 - Our testing saliency results on public datasets
 
-    You can download our testing saliency resutls from this [link]().
+    You can download our testing saliency resutls from this [link].
 
 ## Performance Evaluation
 
