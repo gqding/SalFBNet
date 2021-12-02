@@ -41,11 +41,9 @@ Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download li
     1. Downloading all zipped files, and using following command to restore the complete zip file:
     ```
     zip -F PseudoSaliency_avg_dataset.zip --out PseudoSaliency_avg.zip
-    unzip PseudoSaliency_avg.zip
     ```
-    2. Downloading all zipped files, and using following command to restore the complete zip file:
+    2. Then unzip the file:
     ```
-    zip -F PseudoSaliency_avg_dataset.zip --out PseudoSaliency_avg.zip
     unzip PseudoSaliency_avg.zip
     ```
         
