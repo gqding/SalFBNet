@@ -37,6 +37,11 @@ Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download li
 - Our pre-trained models
 
     It will be available soon.
+    
+    ```
+    zip -F PseudoSaliency_avg_dataset.zip --out PseudoSaliency_avg.zip
+    unzip PseudoSaliency_avg.zip
+    ```
         
 - Our testing saliency results on public datasets
 
