@@ -95,6 +95,12 @@ Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download li
 ### 5. Efficiency Comparison
 <img src="Figs/efficiency.png" alt="input" style="width:600px">
 
+## Pseudo-Saliency Dataset
+### 1. Annotation
+<img src="Figs/pseudo-saliency.png" alt="input" style="width:600px">
+
+### 2. Pseudo Distribution
+<img src="Figs/mean_sal.png" alt="input" style="width:600px">
 
 ## Acknowledgement
 - Data Collection
