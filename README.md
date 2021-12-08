@@ -58,6 +58,10 @@ Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download li
 
 ### 4. Downloads
 - Our pre-trained models
+    
+    It will be available soon.
+
+- Our Pseudo-Saliency dataset (~24.2GB)
 
     It will be available soon.
     
