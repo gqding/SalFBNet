@@ -1,10 +1,33 @@
 # SalFBNet
 
-SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks, 2021
+SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks, 2021. ([pdf](https://arxiv.org/pdf/2112.03731.pdf))
 
 Guanqun Ding, Nevrez Imamoglu, Ali Caglayan, Masahiro Murakawa, Ryosuke Nakamura
 
 <img src="Figs/salfbnet.png" alt="input" style="width:600px">
+
+### Citation
+Please cite the following papers if you use our data or codes in your research.
+
+```
+@misc{ding2021salfbnet,
+      title={SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks}, 
+      author={Guanqun Ding and Nevrez Imamouglu and Ali Caglayan and Masahiro Murakawa and Ryosuke Nakamura},
+      year={2021},
+      eprint={2112.03731},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@inproceedings{ding2021fbnet,
+  title={FBNet: FeedBack-Recursive CNN for Saliency Detection},
+  author={Ding, Guanqun and {\.I}mamo{\u{g}}lu, Nevrez and Caglayan, Ali and Murakawa, Masahiro and Nakamura, Ryosuke},
+  booktitle={2021 17th International Conference on Machine Vision and Applications (MVA)},
+  pages={1--5},
+  year={2021},
+  organization={IEEE}
+}
+```
 
 ## Getting Started
 ### 1. Installation
@@ -67,6 +90,7 @@ Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download li
 
 ### 5. Efficiency Comparison
 <img src="Figs/efficiency.png" alt="input" style="width:600px">
+
 
 ## Acknowledgement
 - Data Collection
