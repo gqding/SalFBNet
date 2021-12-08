@@ -40,6 +40,7 @@ Please cite the following papers if you use our data or codes in your research.
 
 ## Getting Started
 ### 1. Installation
+You can install the envs mannually by following commands:
 ```
 conda create -n salfbnet python=3.8
 conda activate salfbnet
@@ -47,6 +48,11 @@ conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
 pip install scikit-learn scipy tensorboard tqdm
 pip install torchSummeryX
 ```
+Alternativaly, you can install the envs from yml file. Before running the command, please revise the 'prefix' with your PC name.
+```
+conda env create -f environment.yml
+```
+
 ### 2. Run
 The running code will be released after our paper is published.
 
