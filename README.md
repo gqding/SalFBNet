@@ -1,5 +1,12 @@
 # SalFBNet
 
+![](https://img.shields.io/static/v1?label=python&message=3.8&color=blue)
+![](https://img.shields.io/static/v1?label=pytorch&message=1.10.0&color=<COLOR>)
+![](https://img.shields.io/static/v1?label=torchvision&message=0.11.1&color=<COLOR>)
+![](https://img.shields.io/static/v1?label=torchsummaryX&message=1.3.0&color=<COLOR>)
+![](https://img.shields.io/static/v1?label=opencv-python&message=3.4.15.55&color=<COLOR>)
+![](https://img.shields.io/static/v1?label=cuda&message=11.3&color=<COLOR>)
+
 This repository includes Pytorch implementation for the following paper:
 
 SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks, 2021. ([pdf](https://arxiv.org/pdf/2112.03731.pdf))
