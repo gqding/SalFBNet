@@ -1,5 +1,7 @@
 # SalFBNet
 
+This repository includes Pytorch implementation for the following paper:
+
 SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks, 2021. ([pdf](https://arxiv.org/pdf/2112.03731.pdf))
 
 Guanqun Ding, Nevrez Imamoglu, Ali Caglayan, Masahiro Murakawa, Ryosuke Nakamura
