@@ -114,7 +114,7 @@ Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download li
 ### 1. Annotation
 <img src="Figs/pseudo-saliency.png" alt="input" style="width:600px">
 
-### 2. Pseudo Distribution
+### 2. Pseudo Saliency Distribution
 <img src="Figs/mean_sal.png" alt="input" style="width:600px">
 
 ## Acknowledgement
