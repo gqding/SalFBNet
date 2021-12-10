@@ -107,6 +107,12 @@ Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download li
 ### 4. Testing Performance on MIT300
 <img src="Figs/performance5.png" alt="input" style="width:600px">
 
+You can check the leaderboard of [MIT300](https://saliency.tuebingen.ai/results.html).
+
+Our SalFBNet model ranked in Second best with sAUC, CC, and SIM metrics (Screenshot from December 10, 2021).
+
+<img src="Figs/mit300_leaderboard_sAUC_20211210.png" alt="input" style="width:600px">
+
 ### 5. Efficiency Comparison
 <img src="Figs/efficiency.png" alt="input" style="width:600px">
 
