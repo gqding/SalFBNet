@@ -21,7 +21,7 @@ Please cite the following papers if you use our data or codes in your research.
 ```
 @misc{ding2021salfbnet,
       title={SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks}, 
-      author={Guanqun Ding and Nevrez Imamouglu and Ali Caglayan and Masahiro Murakawa and Ryosuke Nakamura},
+      author={Guanqun Ding and Nevrez Imamoglu and Ali Caglayan and Masahiro Murakawa and Ryosuke Nakamura},
       year={2021},
       eprint={2112.03731},
       archivePrefix={arXiv},
