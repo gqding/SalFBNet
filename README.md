@@ -123,6 +123,9 @@ Our SalFBNet model ranked in Second best with sAUC, CC, and SIM metrics (Screens
 ### 2. Pseudo Saliency Distribution
 <img src="Figs/mean_sal.png" alt="input" style="width:600px">
 
+## Evaluation
+We use the [metric implementation](https://github.com/cvzoya/saliency/tree/master/code_forMetrics) from MIT Saliency Benchmark for performance evaluation.
+
 ## Acknowledgement
 - Data Collection
 
