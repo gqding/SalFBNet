@@ -35,3 +35,11 @@ Please cite the following papers if you use our data or codes in your research.
   organization={IEEE}
 }
 ```
+
+### Download
+
+1. You might be asked to register an account and login for obtaining the ImageNet download webpage.
+2. Find the "ImageNet Large Scale Visual Recognition Challenge 2012 (ILSVRC2012)"
+3. Download the following files:
+- [Validation images (all tasks). 6.3GB. MD5: 29b22e2961454d5413ddabcf34fc5622], ILSVRC2012_img_val.tar
+- [Test images (all tasks). 13GB. MD5: e1b8681fff3d63731c599df9b4b6fc02"], ILSVRC2012_img_test_v10102019.tar
