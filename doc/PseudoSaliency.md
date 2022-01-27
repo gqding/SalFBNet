@@ -64,11 +64,11 @@ downloaded_files/
 5. Uncompress all files
 ```
 cd CSSD/
-unzip image.zip
+unzip images.zip
 cd ..
 
 cd ECSSD/
-unzip image.zip
+unzip images.zip
 cd ..
 
 unrar x HKU-IS.rar
@@ -78,5 +78,9 @@ tar -xvf ILSVRC2012_img_val.tar -C ILSVRC2012_img_val
 
 mkdir ILSVRC2012_img_test_v10102019
 tar -xvf ILSVRC2012_img_test_v10102019.tar -C ILSVRC2012_img_test_v10102019
+
+unzip MSRA-B.zip
+
+unzip MSRA10K_Imgs_GT.zip
 
 ```
