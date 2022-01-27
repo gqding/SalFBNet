@@ -37,13 +37,17 @@ Please cite the following papers if you use our data or codes in your research.
 ```
 
 ### Download
-
-1. You might be asked to register an account and login for obtaining the ImageNet download webpage.
-2. Find the "ImageNet Large Scale Visual Recognition Challenge 2012 (ILSVRC2012)"
-3. Download the following files:
+1. Download annotated maps of PseudoSaliency saliency dataset, and unzip the file:
+```
+wget PseudoSaliency_avg_release.zip
+unzip PseudoSaliency_avg_release.zip
+```
+3. You might be asked to register an account and login for obtaining the ImageNet download webpage.
+4. Find the "ImageNet Large Scale Visual Recognition Challenge 2012 (ILSVRC2012)"
+5. Download the following files:
 - [Validation images (all tasks). 6.3GB. MD5: 29b22e2961454d5413ddabcf34fc5622], ILSVRC2012_img_val.tar
 - [Test images (all tasks). 13GB. MD5: e1b8681fff3d63731c599df9b4b6fc02"], ILSVRC2012_img_test_v10102019.tar
-4. Assume that all compressed files have been downloaded under the folder "downloaded_files/", and these files are organized by follows:
+6. Assume that all compressed files have been downloaded under the folder "PseudoSaliency_avg_release/", and these files are organized by follows:
 ```
 downloaded_files/
 ├── CSSD
@@ -56,4 +60,23 @@ downloaded_files/
 ├── MSRA10K_Imgs_GT.zip
 ├── MSRA-B.zip
 └── THUR15000.zip   
+```
+5. Uncompress all files
+```
+cd CSSD/
+unzip image.zip
+cd ..
+
+cd ECSSD/
+unzip image.zip
+cd ..
+
+unrar x HKU-IS.rar
+
+mkdir ILSVRC2012_img_val
+tar -xvf ILSVRC2012_img_val.tar -C ILSVRC2012_img_val
+
+mkdir ILSVRC2012_img_test_v10102019
+tar -xvf ILSVRC2012_img_test_v10102019.tar -C ILSVRC2012_img_test_v10102019
+
 ```
