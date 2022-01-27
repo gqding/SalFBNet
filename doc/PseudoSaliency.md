@@ -43,3 +43,17 @@ Please cite the following papers if you use our data or codes in your research.
 3. Download the following files:
 - [Validation images (all tasks). 6.3GB. MD5: 29b22e2961454d5413ddabcf34fc5622], ILSVRC2012_img_val.tar
 - [Test images (all tasks). 13GB. MD5: e1b8681fff3d63731c599df9b4b6fc02"], ILSVRC2012_img_test_v10102019.tar
+4. Assume that all compressed files have been downloaded under the folder "downloaded_files/", and these files are organized by follows:
+```
+downloaded_files/
+├── CSSD
+│   └── images.zip
+├── ECSSD
+│   └── images.zip
+├── HKU-IS.rar
+├── ILSVRC2012_img_test_v10102019.tar
+├── ILSVRC2012_img_val.tar
+├── MSRA10K_Imgs_GT.zip
+├── MSRA-B.zip
+└── THUR15000.zip   
+```
