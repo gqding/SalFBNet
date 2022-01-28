@@ -49,17 +49,64 @@ unzip PseudoSaliency_avg_release.zip
 - [Test images (all tasks). 13GB. MD5: e1b8681fff3d63731c599df9b4b6fc02"], ILSVRC2012_img_test_v10102019.tar
 6. Assume that all compressed files have been downloaded under the folder "PseudoSaliency_avg_release/", and these files are organized by follows:
 ```
-downloaded_files/
-├── CSSD
-│   └── images.zip
-├── ECSSD
-│   └── images.zip
+PseudoSaliency_avg_release/  
 ├── HKU-IS.rar
 ├── ILSVRC2012_img_test_v10102019.tar
 ├── ILSVRC2012_img_val.tar
 ├── MSRA10K_Imgs_GT.zip
 ├── MSRA-B.zip
-└── THUR15000.zip   
+└── THUR15000.zip  
+├── Images
+│   ├── CSSD
+│   │   └── images
+        └── images.zip
+│   ├── ECSSD
+│   │   └── images
+    │   └── images.zip
+│   ├── HKU-IS
+│   │   ├── gt
+│   │   └── imgs
+│   ├── ILSVRC2012_img_test_v10102019
+│   │   └── test
+│   ├── ILSVRC2012_img_val
+│   ├── MSRA10K_Imgs_GT
+│   │   └── Imgs
+│   ├── MSRA-B
+│   └── THUR15000
+│       ├── Butterfly
+│       │   └── Src
+│       ├── CoffeeMug
+│       │   └── Src
+│       ├── DogJump
+│       │   └── Src
+│       ├── Giraffe
+│       │   └── Src
+│       └── plane
+│           └── Src
+└── Maps
+    ├── CSSD
+    │   └── images
+    ├── ECSSD
+    │   └── images
+    ├── HKU-IS
+    │   └── imgs
+    ├── ILSVRC2012_img_test_v10102019
+    │   └── test
+    ├── ILSVRC2012_img_val
+    ├── MSRA10K_Imgs_GT
+    │   └── Imgs
+    ├── MSRA-B
+    └── THUR15000
+        ├── Butterfly
+        │   └── Src
+        ├── CoffeeMug
+        │   └── Src
+        ├── DogJump
+        │   └── Src
+        ├── Giraffe
+        │   └── Src
+        └── plane
+            └── Src
 ```
 5. Uncompress all files
 ```
