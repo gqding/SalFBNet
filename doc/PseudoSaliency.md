@@ -83,4 +83,6 @@ unzip MSRA-B.zip
 
 unzip MSRA10K_Imgs_GT.zip
 
+unzip THUR15000.zip
+
 ```
