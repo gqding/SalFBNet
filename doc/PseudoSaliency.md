@@ -114,7 +114,7 @@ PseudoSaliency_avg_release/
         └── plane
             └── Src
 ```
-5. Extrac all compressed files by following commands:
+10. Extrac all compressed files by following commands:
 ```
 cd PseudoSaliency_avg_release/CSSD/
 unzip images.zip
@@ -140,3 +140,4 @@ unzip MSRA10K_Imgs_GT.zip
 cd PseudoSaliency_avg_release/
 unzip THUR15000.zip
 ```
+11.
