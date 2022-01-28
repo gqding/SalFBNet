@@ -140,4 +140,7 @@ unzip MSRA10K_Imgs_GT.zip
 cd PseudoSaliency_avg_release/
 unzip THUR15000.zip
 ```
-11.
+11. Use the script "check_files.py" to check that all files exist.  
+```
+python check_files.py
+```
