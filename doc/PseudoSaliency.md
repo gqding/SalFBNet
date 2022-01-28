@@ -48,12 +48,12 @@ unzip PseudoSaliency_avg_release.zip
 5. Download [THUR15K](https://mmcheng.net/code-data/) dataset and put the file "THUR15000.zip" to the folder "PseudoSaliency_avg_release/".
 6. Download [CSSD](https://www.cse.cuhk.edu.hk/leojia/projects/hsaliency/dataset.html) dataset and put the file "images.zip" to the folder "PseudoSaliency_avg_release/CSSD/".
 7. Download [ECSSD](https://www.cse.cuhk.edu.hk/leojia/projects/hsaliency/dataset.html) dataset and put the file "images.zip" to the folder "PseudoSaliency_avg_release/ECSSD/".
-8. You might be asked to register an account and login for obtaining the ImageNet download webpage.
-9. Find the "ImageNet Large Scale Visual Recognition Challenge 2012 (ILSVRC2012)"
-10. Download [ImageNet](https://image-net.org/download.php) dataset from the officail [website](https://image-net.org/download.php). following files:
-- [Validation images (all tasks). 6.3GB. MD5: 29b22e2961454d5413ddabcf34fc5622], ILSVRC2012_img_val.tar
-- [Test images (all tasks). 13GB. MD5: e1b8681fff3d63731c599df9b4b6fc02"], ILSVRC2012_img_test_v10102019.tar
-11. Assume that all compressed files have been downloaded under the folder "PseudoSaliency_avg_release/", and these files are organized by follows:
+8. Download [ImageNet](https://image-net.org/download.php) dataset from the officail [website](https://image-net.org/download.php). You might be asked to register an account and login for obtaining the ImageNet download links. Find the "ImageNet Large Scale Visual Recognition Challenge 2012 (ILSVRC2012)" and download these two files ("ILSVRC2012_img_val.tar" and "ILSVRC2012_img_test_v10102019.tar"):
+```
+Validation images (all tasks). 6.3GB. MD5: 29b22e2961454d5413ddabcf34fc5622
+Test images (all tasks). 13GB. MD5: e1b8681fff3d63731c599df9b4b6fc02" 
+```
+9. Make sure that all folders and files are organized by follows:
 ```
 PseudoSaliency_avg_release/  
 ├── HKU-IS.rar
@@ -114,28 +114,29 @@ PseudoSaliency_avg_release/
         └── plane
             └── Src
 ```
-5. Uncompress all files
+5. Extrac all compressed files by following commands:
 ```
-cd CSSD/
+cd PseudoSaliency_avg_release/CSSD/
 unzip images.zip
-cd ..
 
-cd ECSSD/
+cd PseudoSaliency_avg_release/ECSSD/
 unzip images.zip
-cd ..
 
+cd PseudoSaliency_avg_release/
 unrar x HKU-IS.rar
 
-mkdir ILSVRC2012_img_val
+cd PseudoSaliency_avg_release/
 tar -xvf ILSVRC2012_img_val.tar -C ILSVRC2012_img_val
 
-mkdir ILSVRC2012_img_test_v10102019
+cd PseudoSaliency_avg_release/
 tar -xvf ILSVRC2012_img_test_v10102019.tar -C ILSVRC2012_img_test_v10102019
 
+cd PseudoSaliency_avg_release/
 unzip MSRA-B.zip
 
+cd PseudoSaliency_avg_release/
 unzip MSRA10K_Imgs_GT.zip
 
+cd PseudoSaliency_avg_release/
 unzip THUR15000.zip
-
 ```
