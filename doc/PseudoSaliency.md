@@ -36,18 +36,24 @@ Please cite the following papers if you use our data or codes in your research.
 }
 ```
 
-### Download
-1. Download annotated maps of PseudoSaliency saliency dataset, and unzip the file:
+### Downloads
+1. Download annotated maps of PseudoSaliency saliency dataset, and unzip the file by:
 ```
 wget PseudoSaliency_avg_release.zip
 unzip PseudoSaliency_avg_release.zip
 ```
-3. You might be asked to register an account and login for obtaining the ImageNet download webpage.
-4. Find the "ImageNet Large Scale Visual Recognition Challenge 2012 (ILSVRC2012)"
-5. Download the following files:
+2. Download [HKU-IS](https://i.cs.hku.hk/~gbli/deep_saliency.html) dataset and put the file "HKU-IS.rar" to the folder "PseudoSaliency_avg_release/".
+3. Download [MSRA10K](https://mmcheng.net/msra10k/) dataset and put the file "MSRA10K_Imgs_GT.zip" to the folder "PseudoSaliency_avg_release/".
+4. Download [MSRA-B](https://mmcheng.net/msra10k/) dataset and put the file "MSRA-B.zip" to the folder "PseudoSaliency_avg_release/".
+5. Download [THUR15K](https://mmcheng.net/code-data/) dataset and put the file "THUR15000.zip" to the folder "PseudoSaliency_avg_release/".
+6. Download [CSSD](https://www.cse.cuhk.edu.hk/leojia/projects/hsaliency/dataset.html) dataset and put the file "images.zip" to the folder "PseudoSaliency_avg_release/CSSD/".
+7. Download [ECSSD](https://www.cse.cuhk.edu.hk/leojia/projects/hsaliency/dataset.html) dataset and put the file "images.zip" to the folder "PseudoSaliency_avg_release/ECSSD/".
+8. You might be asked to register an account and login for obtaining the ImageNet download webpage.
+9. Find the "ImageNet Large Scale Visual Recognition Challenge 2012 (ILSVRC2012)"
+10. Download [ImageNet](https://image-net.org/download.php) dataset from the officail [website](https://image-net.org/download.php). following files:
 - [Validation images (all tasks). 6.3GB. MD5: 29b22e2961454d5413ddabcf34fc5622], ILSVRC2012_img_val.tar
 - [Test images (all tasks). 13GB. MD5: e1b8681fff3d63731c599df9b4b6fc02"], ILSVRC2012_img_test_v10102019.tar
-6. Assume that all compressed files have been downloaded under the folder "PseudoSaliency_avg_release/", and these files are organized by follows:
+11. Assume that all compressed files have been downloaded under the folder "PseudoSaliency_avg_release/", and these files are organized by follows:
 ```
 PseudoSaliency_avg_release/  
 ├── HKU-IS.rar
