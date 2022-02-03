@@ -119,16 +119,6 @@ Our SalFBNet model ranked in Second best with sAUC, CC, and SIM metrics (Screens
 ### 5. Efficiency Comparison
 <img src="Figs/efficiency.png" alt="input" style="width:600px">
 
-## Pseudo-Saliency Dataset
-### 1. Annotation
-<img src="Figs/pseudo-saliency.png" alt="input" style="width:600px">
-
-### 2. Pseudo Saliency Distribution
-<img src="Figs/mean_sal.png" alt="input" style="width:600px">
-
-### 3. PseudoSaliency Download
-Downlaod link of [PseudoSaliency](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md) dataset can be found from [here](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
-
 ## Evaluation
 We use the [metric implementation](https://github.com/cvzoya/saliency/tree/master/code_forMetrics) from MIT Saliency Benchmark for performance evaluation.
 
