@@ -6,7 +6,7 @@ import numpy as np
 from tqdm import tqdm
 
 img_root = "./"
-filename = os.path.join(img_root, "Train_List_PseudoSaliency.txt")
+filename = os.path.join(img_root, "Train_List_PseudoSaliency.lst")
 lines = [line.rstrip('\n') for line in open(filename)]
 image_paths = list(map(lambda x: os.path.join(img_root, x.split(' ')[0]), lines))
 label_paths = list(map(lambda x: os.path.join(img_root, x.split(' ')[1]), lines))
@@ -19,7 +19,7 @@ for img_path, lb_path in tqdm(zip(image_paths, label_paths), desc="training set"
         label = cv2.imread(lb_path, 0)
 print("Finished! All files in training set are ready!")
 
-filename_val = os.path.join(img_root, "Val_List_PseudoSaliency.txt")
+filename_val = os.path.join(img_root, "Val_List_PseudoSaliency.lst")
 lines_val = [line.rstrip('\n') for line in open(filename_val)]
 image_paths_val = list(map(lambda x: os.path.join(img_root, x.split(' ')[0]), lines_val))
 label_paths_val = list(map(lambda x: os.path.join(img_root, x.split(' ')[1]), lines_val))
