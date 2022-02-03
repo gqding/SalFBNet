@@ -57,11 +57,11 @@ conda env create -f environment.yml
 ### 2. Downloads
 - Our pre-trained models
     
-    We released pretrained model on [Google Drive](https://drive.google.com/drive/folders/1tUYgWPZvVn5k8xNZCSuv2lquNOSTzM7X?usp=sharing).
+    We released our pretrained SalFBNet models on [Google Drive](https://drive.google.com/drive/folders/1tUYgWPZvVn5k8xNZCSuv2lquNOSTzM7X?usp=sharing).
 
 - Our Pseudo-Saliency dataset (~24.2GB)
 
-    We released PseudoSaliency dataset on [this page](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
+    We released our PseudoSaliency dataset on [this page](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
         
 - Our testing saliency results on public datasets
 
@@ -79,7 +79,7 @@ python main_test.py --model=pretrained_models/FBNet_Res18Fixed_best_model.pth \
 --backbone=Res18Fixed\
 --test_path=Datasets/PseudoSaliency/Images/ECSSD/images/
 ```
-You can find results under the 'results_*' folder
+You can find results under the 'results_*' folder.
 ### 4. Datasets
 
 Dataset | #Image | #Training | #Val. | #Testing | Size | URL | Paper
