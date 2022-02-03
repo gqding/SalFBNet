@@ -60,7 +60,7 @@ conda env create -f environment.yml
     
     We released our pretrained SalFBNet models on [Google Drive](https://drive.google.com/drive/folders/1tUYgWPZvVn5k8xNZCSuv2lquNOSTzM7X?usp=sharing).
 
-- Our Pseudo-Saliency dataset (~24.2GB)
+- Our Pseudo-Saliency dataset
 
     We released our PseudoSaliency dataset on [this page](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
         
