@@ -156,7 +156,7 @@ For example,
 ```
 Images/MSRA10K_Imgs_GT/Imgs/177838.jpg Maps/MSRA10K_Imgs_GT/Imgs/177838.jpg
 ```
-You can easily read all path lists with following script
+You can easily read all path lists with following script (see demo_check_all_files.py)
 ```python
 import os
 import glob
@@ -170,7 +170,7 @@ lines = [line.rstrip('\n') for line in open(filename)]
 image_paths = list(map(lambda x: os.path.join(img_root, x.split(' ')[0]), lines))
 label_paths = list(map(lambda x: os.path.join(img_root, x.split(' ')[1]), lines))
 print("Starting to check all images and labels of training set...")
-read_image=False
+read_image=True
 for img_path, lb_path in tqdm(zip(image_paths, label_paths), desc="training set", total=len(image_paths)):
     assert os.path.exists(img_path) and os.path.exists(lb_path)
     if read_image:
