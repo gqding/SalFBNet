@@ -51,7 +51,6 @@ pip install torchSummaryX
 ```
 Alternativaly, you can install the envs from yml file. Before running the command, please revise the 'prefix' with your PC name.
 ```
-https://github.com/gqding/SalFBNet.git
 conda env create -f environment.yml
 ```
 
