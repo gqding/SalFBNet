@@ -140,7 +140,7 @@ unzip MSRA10K_Imgs_GT.zip
 cd PseudoSaliency_avg_release/
 unzip THUR15000.zip
 ```
-11. Use the script "demo_check_all_files.py" to check that all files exist.  
+11. Use the script "[demo_check_all_files.py](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/demo_check_all_files.py)" to check that all files exist.  
 ```sh
 python demo_check_all_files.py
 ```
