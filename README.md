@@ -66,7 +66,7 @@ Dataset | #Image | #Training | #Val. | #Testing | Size | URL | Paper
 [PASCAL-S](http://cbs.ic.gatech.edu/salobj/) | 850 | - | - | 850 | ~108.3MB | [download link](http://cbs.ic.gatech.edu/salobj/) | [paper](https://arxiv.org/pdf/1406.2807)
 [DUT-OMRON](http://saliencydetection.net/dut-omron/) | 5,168 | - | - | 5,168 | ~151.8MB | [download link](http://saliencydetection.net/dut-omron/) | [paper](http://saliencydetection.net/dut-omron/download/manifold.pdf)
 [TORONTO](http://www-sop.inria.fr/members/Neil.Bruce/) | 120 | - | - | 120 | ~12.3MB | [download link](http://www-sop.inria.fr/members/Neil.Bruce/eyetrackingdata.zip) | [paper](http://www-sop.inria.fr/members/Neil.Bruce/NIPS2005_0081.pdf)
-Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download link](https://github.com/gqding/SalFBNet/blob/main/doc/PseudoSaliency.md) | [paper](https://arxiv.org/abs/2112.03731)
+Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download link](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md) | [paper](https://arxiv.org/abs/2112.03731)
 
 * \*Training and Validation sets are randomly split by this work.
 * We will release our Pseudo-Saliency dataset after our paper is published.
