@@ -156,7 +156,7 @@ For example,
 ```
 Images/MSRA10K_Imgs_GT/Imgs/177838.jpg Maps/MSRA10K_Imgs_GT/Imgs/177838.jpg
 ```
-You can easily read all path lists with following script (see demo_check_all_files.py)
+You can easily read all path lists with following script (see [demo_check_all_files.py](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/demo_check_all_files.py))
 ```python
 import os
 import glob
@@ -177,3 +177,14 @@ for img_path, lb_path in tqdm(zip(image_paths, label_paths), desc="training set"
         image = cv2.imread(img_path)
         label = cv2.imread(lb_path, 0)
 ```
+
+## Acknowledgement
+- Data Collection
+
+    We collect color images from [ImageNet](https://image-net.org/challenges/LSVRC/2012/index.php) and SOD datasets including [CSSD](https://www.cse.cuhk.edu.hk/leojia/projects/hsaliency/dataset.html), [ECSSD](https://www.cse.cuhk.edu.hk/leojia/projects/hsaliency/dataset.html), [HKU-IS](https://i.cs.hku.hk/~gbli/deep_saliency.html), [MSRA-B](https://mmcheng.net/msra10k/), [MSRA10K](https://mmcheng.net/msra10k/), [THUR15K](https://mmcheng.net/gsal/). 
+
+- Pseudo-Annotators
+
+    We use 5 models as our Pseudo-Annotators, including [DeepGazeIIE](https://github.com/matthias-k/DeepGaze), [UNISAL](https://github.com/rdroste/unisal), [MSINet](https://github.com/alexanderkroner/saliency), [EMLNet](https://github.com/SenJia/EML-NET-Saliency), [CASNetII](https://ncript.comp.nus.edu.sg/site/ncript-top/emotionalattention/).
+
+    We appriciate their public datasets and codes.
