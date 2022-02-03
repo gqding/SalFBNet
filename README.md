@@ -69,8 +69,18 @@ conda env create -f environment.yml
     You can download our testing saliency resutls from this [link].
 
 ### 3. Run
-The running code will be released after our paper is published.
-
+After downloading the pretrained models, you can run the script as 
+```sh
+sh run_test.sh
+```
+Alternativaly, you can modify the script for testing of different image folder and models (SalFBNet_Res18 or SalFBNet_Res18Fixed).
+```sh
+python main_test.py --model=pretrained_models/FBNet_Res18Fixed_best_model.pth \
+--save_fold=./results_Res18Fixed/ \
+--backbone=Res18Fixed\
+--test_path=Datasets/PseudoSaliency/Images/ECSSD/images/
+```
+You can find results under the 'results_*' folder
 ### 4. Datasets
 
 Dataset | #Image | #Training | #Val. | #Testing | Size | URL | Paper
