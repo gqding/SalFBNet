@@ -65,7 +65,7 @@ conda env create -f environment.yml
         
 - Our testing saliency results on public datasets
 
-    You can download our testing saliency resutls from this [GooGle Drive](https://drive.google.com/drive/folders/1KwQhft1l_siVR33tFLUiihdwPcuA_3b6?usp=sharing).
+    You can download our testing saliency resutls from this [Google Drive](https://drive.google.com/drive/folders/1KwQhft1l_siVR33tFLUiihdwPcuA_3b6?usp=sharing).
 
 ### 3. Run
 After downloading the pretrained models, you can run the script by 
