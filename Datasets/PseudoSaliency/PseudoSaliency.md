@@ -165,7 +165,7 @@ import numpy as np
 from tqdm import tqdm
 
 img_root = "./"
-filename = os.path.join(img_root, "Train_List_PseudoSaliency.txt")
+filename = os.path.join(img_root, "Train_List_PseudoSaliency.lst")
 lines = [line.rstrip('\n') for line in open(filename)]
 image_paths = list(map(lambda x: os.path.join(img_root, x.split(' ')[0]), lines))
 label_paths = list(map(lambda x: os.path.join(img_root, x.split(' ')[1]), lines))
