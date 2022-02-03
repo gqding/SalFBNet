@@ -68,8 +68,8 @@ Dataset | #Image | #Training | #Val. | #Testing | Size | URL | Paper
 [TORONTO](http://www-sop.inria.fr/members/Neil.Bruce/) | 120 | - | - | 120 | ~12.3MB | [download link](http://www-sop.inria.fr/members/Neil.Bruce/eyetrackingdata.zip) | [paper](http://www-sop.inria.fr/members/Neil.Bruce/NIPS2005_0081.pdf)
 Pseudo-Saliency (Ours) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download link](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md) | [paper](https://arxiv.org/abs/2112.03731)
 
-* \*Training and Validation sets are randomly split by this work.
-* We will release our Pseudo-Saliency dataset after our paper is published.
+* \*Training and Validation sets are randomly split by this work (see [Training list](https://github.com/gqding/SalFBNet/blob/main/Datasets/Eye_Fixation_Train_MIT1003.lst) and [Val list](https://github.com/gqding/SalFBNet/blob/main/Datasets/Eye_Fixation_Val_MIT1003.lst)).
+* We released our Pseudo-Saliency dataset on this [link](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
 
 ### 4. Downloads
 - Our pre-trained models
