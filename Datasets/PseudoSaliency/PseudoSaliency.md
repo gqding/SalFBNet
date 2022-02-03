@@ -36,6 +36,16 @@ Please cite the following papers if you use our data or codes in your research.
 }
 ```
 
+## Pseudo-Saliency Dataset
+### 1. Annotation
+<img src="../../../Figs/pseudo-saliency.png" alt="input" style="width:600px">
+
+### 2. Pseudo Saliency Distribution
+<img src="../../../Figs/mean_sal.png" alt="input" style="width:600px">
+
+### 3. PseudoSaliency Download
+Downlaod link of [PseudoSaliency](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md) dataset can be found from [here](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
+
 ### Downloads
 1. Download annotated maps of PseudoSaliency saliency dataset, and unzip the file by:
 ```sh
