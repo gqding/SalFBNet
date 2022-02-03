@@ -38,7 +38,7 @@ Please cite the following papers if you use our data or codes in your research.
 
 ### Downloads
 1. Download annotated maps of PseudoSaliency saliency dataset, and unzip the file by:
-```
+```sh
 wget PseudoSaliency_avg_release.zip
 unzip PseudoSaliency_avg_release.zip
 ```
@@ -115,7 +115,7 @@ PseudoSaliency_avg_release/
             └── Src
 ```
 10. Extrac all compressed files by following commands:
-```
+```sh
 cd PseudoSaliency_avg_release/CSSD/
 unzip images.zip
 
@@ -141,6 +141,39 @@ cd PseudoSaliency_avg_release/
 unzip THUR15000.zip
 ```
 11. Use the script "check_files.py" to check that all files exist.  
+```sh
+python demo_check_all_files.py
 ```
-python check_files.py
+
+### Data Description
+There are two text files that hold a list of paths of the training and validation sets for the PseudoSaliency dataset.
+
+For each line in the text file, the contents are
+```
+<image_path label_path>
+```
+For example,
+```
+Images/MSRA10K_Imgs_GT/Imgs/177838.jpg Maps/MSRA10K_Imgs_GT/Imgs/177838.jpg
+```
+You can easily read all path lists with following script
+```python
+import os
+import glob
+import cv2
+import numpy as np
+from tqdm import tqdm
+
+img_root = "./"
+filename = os.path.join(img_root, "Train_List_PseudoSaliency.txt")
+lines = [line.rstrip('\n') for line in open(filename)]
+image_paths = list(map(lambda x: os.path.join(img_root, x.split(' ')[0]), lines))
+label_paths = list(map(lambda x: os.path.join(img_root, x.split(' ')[1]), lines))
+print("Starting to check all images and labels of training set...")
+read_image=False
+for img_path, lb_path in tqdm(zip(image_paths, label_paths), desc="training set", total=len(image_paths)):
+    assert os.path.exists(img_path) and os.path.exists(lb_path)
+    if read_image:
+        image = cv2.imread(img_path)
+        label = cv2.imread(lb_path, 0)
 ```
