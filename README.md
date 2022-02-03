@@ -46,7 +46,7 @@ conda create -n salfbnet python=3.8
 conda activate salfbnet
 conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
 pip install scikit-learn scipy tensorboard tqdm
-pip install torchSummeryX
+pip install torchSummaryX
 ```
 Alternativaly, you can install the envs from yml file. Before running the command, please revise the 'prefix' with your PC name.
 ```
