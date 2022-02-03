@@ -42,6 +42,7 @@ Please cite the following papers if you use our data or codes in your research.
 ### 1. Installation
 You can install the envs mannually by following commands:
 ```
+git clone https://github.com/gqding/SalFBNet.git
 conda create -n salfbnet python=3.8
 conda activate salfbnet
 conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
@@ -50,13 +51,27 @@ pip install torchSummaryX
 ```
 Alternativaly, you can install the envs from yml file. Before running the command, please revise the 'prefix' with your PC name.
 ```
+https://github.com/gqding/SalFBNet.git
 conda env create -f environment.yml
 ```
 
-### 2. Run
+### 2. Downloads
+- Our pre-trained models
+    
+    We released pretrained model on [Google Drive](https://drive.google.com/drive/folders/1tUYgWPZvVn5k8xNZCSuv2lquNOSTzM7X?usp=sharing).
+
+- Our Pseudo-Saliency dataset (~24.2GB)
+
+    We released PseudoSaliency dataset on [this page](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
+        
+- Our testing saliency results on public datasets
+
+    You can download our testing saliency resutls from this [link].
+
+### 3. Run
 The running code will be released after our paper is published.
 
-### 3. Datasets
+### 4. Datasets
 
 Dataset | #Image | #Training | #Val. | #Testing | Size | URL | Paper
 :-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
@@ -70,28 +85,6 @@ Dataset | #Image | #Training | #Val. | #Testing | Size | URL | Paper
 
 * \*Training and Validation sets are randomly split by this work (see [Training list](https://github.com/gqding/SalFBNet/blob/main/Datasets/Eye_Fixation_Train_MIT1003.lst) and [Val list](https://github.com/gqding/SalFBNet/blob/main/Datasets/Eye_Fixation_Val_MIT1003.lst)).
 * We released our Pseudo-Saliency dataset on this [link](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
-
-### 4. Downloads
-- Our pre-trained models
-    
-    It will be available soon.
-
-- Our Pseudo-Saliency dataset (~24.2GB)
-
-    It will be available soon.
-    
-    1. Downloading all zipped files, and using following command to restore the complete zip file:
-    ```
-    zip -F PseudoSaliency_avg_dataset.zip --out PseudoSaliency_avg.zip
-    ```
-    2. Then unzip the file:
-    ```
-    unzip PseudoSaliency_avg.zip
-    ```
-        
-- Our testing saliency results on public datasets
-
-    You can download our testing saliency resutls from this [link].
 
 ## Performance Evaluation
 
