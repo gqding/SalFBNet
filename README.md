@@ -19,13 +19,14 @@ Guanqun Ding, Nevrez Imamoglu, Ali Caglayan, Masahiro Murakawa, Ryosuke Nakamura
 Please cite the following papers if you use our data or codes in your research.
 
 ```
-@misc{ding2021salfbnet,
-      title={SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks}, 
-      author={Guanqun Ding and Nevrez Imamoglu and Ali Caglayan and Masahiro Murakawa and Ryosuke Nakamura},
-      year={2021},
-      eprint={2112.03731},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{ding2021salfbnet,
+  title={SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks},
+  author={Guanqun Ding and Nevrez Imamoglu and Ali Caglayan and Masahiro Murakawa and Ryosuke Nakamura},
+  journal={Image and Vision Computing},
+  volume={vv},
+  pages={pp},
+  year={2022},
+  publisher={Elsevier}
 }
 
 @inproceedings{ding2021fbnet,
