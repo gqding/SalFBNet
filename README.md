@@ -19,12 +19,11 @@ Guanqun Ding, Nevrez Imamoglu, Ali Caglayan, Masahiro Murakawa, Ryosuke Nakamura
 Please cite the following papers if you use our data or codes in your research.
 
 ```
-@article{ding2021salfbnet,
-  title={SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks},
-  author={Guanqun Ding and Nevrez Imamoglu and Ali Caglayan and Masahiro Murakawa and Ryosuke Nakamura},
+@article{ding2022salfbnet,
+  title={SalFBNet: Learning pseudo-saliency distribution via feedback convolutional networks},
+  author={Ding, Guanqun and {\.I}mamo{\u{g}}lu, Nevrez and Caglayan, Ali and Murakawa, Masahiro and Nakamura, Ryosuke},
   journal={Image and Vision Computing},
-  volume={vv},
-  pages={pp},
+  pages={104395},
   year={2022},
   publisher={Elsevier}
 }
@@ -77,7 +76,7 @@ Alternativaly, you can modify the script for testing of different image folder a
 ```sh
 python main_test.py --model=pretrained_models/FBNet_Res18Fixed_best_model.pth \
 --save_fold=./results_Res18Fixed/ \
---backbone=Res18Fixed\
+--backbone=Res18Fixed \
 --test_path=Datasets/PseudoSaliency/Images/ECSSD/images/
 ```
 You can find results under the 'results_*' folder.
