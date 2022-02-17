@@ -15,29 +15,6 @@ Guanqun Ding, Nevrez Imamoglu, Ali Caglayan, Masahiro Murakawa, Ryosuke Nakamura
 
 <img src="Figs/salfbnet.png" alt="input" style="width:600px">
 
-### Citation
-Please cite the following papers if you use our data or codes in your research.
-
-```
-@article{ding2022salfbnet,
-  title={SalFBNet: Learning pseudo-saliency distribution via feedback convolutional networks},
-  author={Ding, Guanqun and {\.I}mamo{\u{g}}lu, Nevrez and Caglayan, Ali and Murakawa, Masahiro and Nakamura, Ryosuke},
-  journal={Image and Vision Computing},
-  pages={104395},
-  year={2022},
-  publisher={Elsevier}
-}
-
-@inproceedings{ding2021fbnet,
-  title={FBNet: FeedBack-Recursive CNN for Saliency Detection},
-  author={Ding, Guanqun and {\.I}mamo{\u{g}}lu, Nevrez and Caglayan, Ali and Murakawa, Masahiro and Nakamura, Ryosuke},
-  booktitle={2021 17th International Conference on Machine Vision and Applications (MVA)},
-  pages={1--5},
-  year={2021},
-  organization={IEEE}
-}
-```
-
 ## Getting Started
 ### 1. Installation
 You can install the envs mannually by following commands:
@@ -120,6 +97,29 @@ Our SalFBNet model ranked in Second best with sAUC, CC, and SIM metrics (Screens
 
 ## Evaluation
 We use the [metric implementation](https://github.com/cvzoya/saliency/tree/master/code_forMetrics) from MIT Saliency Benchmark for performance evaluation.
+
+## Citation
+Please cite the following papers if you use our data or codes in your research.
+
+```
+@article{ding2022salfbnet,
+  title={SalFBNet: Learning pseudo-saliency distribution via feedback convolutional networks},
+  author={Ding, Guanqun and {\.I}mamo{\u{g}}lu, Nevrez and Caglayan, Ali and Murakawa, Masahiro and Nakamura, Ryosuke},
+  journal={Image and Vision Computing},
+  pages={104395},
+  year={2022},
+  publisher={Elsevier}
+}
+
+@inproceedings{ding2021fbnet,
+  title={FBNet: FeedBack-Recursive CNN for Saliency Detection},
+  author={Ding, Guanqun and {\.I}mamo{\u{g}}lu, Nevrez and Caglayan, Ali and Murakawa, Masahiro and Nakamura, Ryosuke},
+  booktitle={2021 17th International Conference on Machine Vision and Applications (MVA)},
+  pages={1--5},
+  year={2021},
+  organization={IEEE}
+}
+```
 
 ## Acknowledgement
 - Data Collection
