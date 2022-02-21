@@ -20,13 +20,6 @@ def preprocess(img, out_size=None, data='img'):
     return tensor
 
 class ImageData(data.Dataset):
-    """ image dataset
-    img_root:    image root (root which contain images)
-    label_root:  label root (root which contains labels)
-    transform:   pre-process for image
-    t_transform: pre-process for label
-    filename:    MSRA-B use xxx.txt to recognize train-val-test data (only for MSRA-B)
-    """
 
     def __init__(self, img_root, label_root, transform, t_transform, f_transform, filename=None, mode='Train'):
         if filename is None:
