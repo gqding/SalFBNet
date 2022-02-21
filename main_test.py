@@ -6,25 +6,7 @@ from solver import Solver
 
 def main(config):
     if config.mode == 'train':
-        train_loader = get_loader(config.train_path, config.label_path, config.img_size, config.batch_size,
-                                  filename=config.train_file, num_thread=config.num_thread)
-        if config.val:
-            val_loader = get_loader(config.val_path, config.val_label, config.img_size, config.batch_size,
-                                    filename=config.val_file, num_thread=config.num_thread)
-        else:
-            val_loader = None
-        run = 0
-        while os.path.exists("%s/run-%d" % (config.save_fold, run)): run += 1
-        os.mkdir("%s/run-%d" % (config.save_fold, run))
-        os.mkdir("%s/run-%d/logs" % (config.save_fold, run))
-        # os.mkdir("%s/run-%d/images" % (config.save_fold, run))
-        os.mkdir("%s/run-%d/models" % (config.save_fold, run))
-        config.save_fold = "%s/run-%d" % (config.save_fold, run)
-        if config.val:
-            train = Solver(train_loader, val_loader, None, config)
-        else:
-            train = Solver(train_loader, None, None, config)
-        train.train()
+        pass
     elif config.mode == 'test':
         test_loader = get_loader_test(config.test_path, config.test_label, config.img_size, config.batch_size,
                                       mode='test',
