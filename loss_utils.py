@@ -37,7 +37,7 @@ def NSS_loss_v1(input, saliency, target):  # This NSS loss is EMLNet paper's imp
     loss = (ref*target - input*target).sum(-1).sum(-1).sum(-1) / target.sum(-1).sum(-1).sum(-1)
     return loss
 
-def SFNE_loss_v1(input, saliency, target):  # This SMSE loss (based on NSS loss) is our implementation v1
+def SFNE_loss_v1(input, saliency, target):  # This SFNE loss (based on NSS loss) is our implementation v1
     input=input.float()
     saliency=saliency.float()
     target=target.float()
@@ -47,7 +47,7 @@ def SFNE_loss_v1(input, saliency, target):  # This SMSE loss (based on NSS loss)
     loss = torch.pow((ref*target - input*target),2).sum(-1).sum(-1).sum(-1) / target.sum(-1).sum(-1).sum(-1)
     return loss
 
-def SFNE_loss(input, saliency, target, nontarget):  # This SMSE loss (based on NSS loss) is our implementation
+def SFNE_loss(input, saliency, target, nontarget):  # This SFNE loss (based on NSS loss) is our implementation
     input=input.float()
     saliency=saliency.float()
     target=target.float()
@@ -61,7 +61,7 @@ def SFNE_loss(input, saliency, target, nontarget):  # This SMSE loss (based on N
     loss=loss1+loss2
     return loss
 
-def NSS_loss_v2(input, saliency, target):  # This NSS loss is our SMSE_loss implementation plus unisal NSS_loss1 implementation
+def NSS_loss_v2(input, saliency, target):  # This NSS loss is our SFNE_loss implementation plus unisal NSS_loss1 implementation
     loss_nss1=NSS_loss(input, saliency, target)
     loss_nss2=SFNE_loss(input, saliency, target)
     loss=(-1)*loss_nss1+loss_nss2
@@ -164,19 +164,6 @@ def log_softmax(x):
     return x.view(x_size)
 
 def calc_loss_unisal(pred_seq, sal, fix, nonfix, loss_metrics=('kld', 'nss', 'cc', 'sfne'), loss_weights=(1.0, -1.0, 1.0, 1.0)):
-    '''
-    clculating the total loss
-    Args:
-        pred_seq: log_softmax, dim=1, shape [b, c, w, h]. For the loss, the input shape should be [b, nframe, c, w, h], if the input is static image, nframe=1
-        sal: softmax, dim=1, shape [b, c, w, h]. For the loss, the input shape should be [b, nframe, c, w, h], if the input is static image, nframe=1
-        fix: bool, shape [b, c, w, h]. For the loss, the input shape should be [b, nframe, c, w, h], if the input is static image, nframe=1
-        loss_metrics: ('kld', 'nss', 'cc', 'sfne')
-        loss_weights: (1, -0.1, 0.1, 0.1)
-
-    Returns:
-        loss: The weighted loss.
-    '''
-
     assert len(pred_seq.shape) == 4 and len(sal.shape) == 4 and len(fix.shape) == 4
     sal = torch.unsqueeze(sal, 1)  # [b, nframe, c, w, h]
     fix = torch.unsqueeze(fix, 1)  # [b, nframe, c, w, h]
@@ -192,19 +179,6 @@ def calc_loss_unisal(pred_seq, sal, fix, nonfix, loss_metrics=('kld', 'nss', 'cc
     return loss
 
 def calc_loss_unisal_val(pred_seq, sal, fix, nonfix, loss_metrics=('kld', 'nss', 'cc'), loss_weights=(-1.0, 1.0, 1.0)):  # real KLD, NSS, CC metrics for validation
-    '''
-    clculating the total loss
-    Args:
-        pred_seq: log_softmax, dim=1, shape [b, c, w, h]. For the loss, the input shape should be [b, nframe, c, w, h], if the input is static image, nframe=1
-        sal: softmax, dim=1, shape [b, c, w, h]. For the loss, the input shape should be [b, nframe, c, w, h], if the input is static image, nframe=1
-        fix: bool, shape [b, c, w, h]. For the loss, the input shape should be [b, nframe, c, w, h], if the input is static image, nframe=1
-        loss_metrics: ('kld', 'nss', 'cc', 'smse')
-        loss_weights: (1, -0.1, 0.1, 0.1)
-
-    Returns:
-        loss: The weighted loss.
-    '''
-
     assert len(pred_seq.shape) == 4 and len(sal.shape) == 4 and len(fix.shape) == 4
     sal = torch.unsqueeze(sal, 1)  # [b, nframe, c, w, h]
     fix = torch.unsqueeze(fix, 1)  # [b, nframe, c, w, h]
