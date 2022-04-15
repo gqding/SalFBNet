@@ -44,7 +44,7 @@ Please cite the following papers if you use our data or codes in your research.
 <img src="https://github.com/gqding/SalFBNet/blob/main/Figs/mean_sal.png" alt="input" style="width:600px">
 
 ### Downloads
-1. Download annotated maps of PseudoSaliency saliency dataset, and unzip the file by:
+1. Download annotated maps of [**PseudoSaliency saliency dataset**](https://salfbnet-pseudo-saliency-dataset.s3.abci.ai/PseudoSaliency_avg_release.zip), and unzip the file by:
 ```sh
 wget https://salfbnet-pseudo-saliency-dataset.s3.abci.ai/PseudoSaliency_avg_release.zip
 unzip PseudoSaliency_avg_release.zip
