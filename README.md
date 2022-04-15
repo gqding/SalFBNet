@@ -38,7 +38,7 @@ conda env create -f environment.yml
     
     We released our pretrained SalFBNet models on [Google Drive](https://drive.google.com/drive/folders/1tUYgWPZvVn5k8xNZCSuv2lquNOSTzM7X?usp=sharing).
 
-- Our Pseudo-Saliency dataset
+- Our **SalFBNet Pseudo Saliency Dataset**
 
     We released our PseudoSaliency dataset on this [ABCI Datasets page](https://datasets.abci.ai/dataset/salfbnet_pseudo_saliency_dataset_info/);
     
