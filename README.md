@@ -34,7 +34,7 @@ conda env create -f environment.yml
 ```
 
 ### 2. Downloads
-- Our pre-trained models
+- Our released SalFBNet models
     
     We released our pretrained SalFBNet models on [Google Drive](https://drive.google.com/drive/folders/1tUYgWPZvVn5k8xNZCSuv2lquNOSTzM7X?usp=sharing). The shared models initially trained on our [Pseudo-Saliency Dataset](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md), then fine tuned with [SALICON](http://salicon.net/challenge-2017/) and [MIT1003](http://people.csail.mit.edu/tjudd/WherePeopleLook/) to be tested on [MIT300](http://saliency.mit.edu/results_mit300.html) benchmark.
 
