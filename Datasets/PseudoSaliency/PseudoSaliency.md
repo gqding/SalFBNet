@@ -49,6 +49,9 @@ Please cite the following papers if you use our data or codes in your research.
 wget https://salfbnet-pseudo-saliency-dataset.s3.abci.ai/PseudoSaliency_avg_release.zip
 unzip PseudoSaliency_avg_release.zip
 ```
+- *Please note that we only provide annotated maps as the copyright for the images does not belong to us.*
+- *Please download the images by following steps 2-8.*
+
 2. Download [HKU-IS](https://i.cs.hku.hk/~gbli/deep_saliency.html) dataset and put the file "HKU-IS.rar" to the folder "PseudoSaliency_avg_release/".
 3. Download [MSRA10K](https://mmcheng.net/msra10k/) dataset and put the file "MSRA10K_Imgs_GT.zip" to the folder "PseudoSaliency_avg_release/".
 4. Download [MSRA-B](https://mmcheng.net/msra10k/) dataset and put the file "MSRA-B.zip" to the folder "PseudoSaliency_avg_release/".
