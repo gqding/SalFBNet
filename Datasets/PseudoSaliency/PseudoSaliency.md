@@ -1,4 +1,4 @@
-# PseudoSaliency Dataset
+# SalFBNet Pseudo Saliency Dataset
 
 ![](https://img.shields.io/static/v1?label=dataset&message=PseudoSaliency&color=blue)
 ![](https://img.shields.io/static/v1?label=size&message=24.2GB&color=<COLOR>)
@@ -46,7 +46,7 @@ Please cite the following papers if you use our data or codes in your research.
 ### Downloads
 1. Download annotated maps of PseudoSaliency saliency dataset, and unzip the file by:
 ```sh
-wget PseudoSaliency_avg_release.zip
+wget https://salfbnet-pseudo-saliency-dataset.s3.abci.ai/PseudoSaliency_avg_release.zip
 unzip PseudoSaliency_avg_release.zip
 ```
 2. Download [HKU-IS](https://i.cs.hku.hk/~gbli/deep_saliency.html) dataset and put the file "HKU-IS.rar" to the folder "PseudoSaliency_avg_release/".
