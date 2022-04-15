@@ -74,7 +74,7 @@ Dataset | #Image | #Training | #Val. | #Testing | Size | URL | Paper
 [Pseudo-Saliency (Ours)](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md) | 176,880 | 150,000 | 26,880 | - | ~24.2GB | [download link](https://salfbnet-pseudo-saliency-dataset.s3.abci.ai/PseudoSaliency_avg_release.zip) | [paper](https://arxiv.org/abs/2112.03731)
 
 * \*Training and Validation sets are randomly split by this work (see [Training list](https://github.com/gqding/SalFBNet/blob/main/Datasets/Eye_Fixation_Train_MIT1003.lst) and [Val list](https://github.com/gqding/SalFBNet/blob/main/Datasets/Eye_Fixation_Val_MIT1003.lst)).
-* We released our Pseudo-Saliency dataset on this [link](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
+* We released our Pseudo-Saliency dataset on this [ABCI Datasets page](https://datasets.abci.ai/dataset/salfbnet_pseudo_saliency_dataset_info/).
 
 ## Performance Evaluation
 
