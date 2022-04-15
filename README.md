@@ -40,7 +40,9 @@ conda env create -f environment.yml
 
 - Our Pseudo-Saliency dataset
 
-    We released our PseudoSaliency dataset on [this page](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
+    We released our PseudoSaliency dataset on this [ABCI Datasets page](https://datasets.abci.ai/dataset/salfbnet_pseudo_saliency_dataset_info/)
+    
+    We also show how to use our dataset for model training on this [Usage page](https://github.com/gqding/SalFBNet/blob/main/Datasets/PseudoSaliency/PseudoSaliency.md).
         
 - Our testing saliency results on public datasets
 
