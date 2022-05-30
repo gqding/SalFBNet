@@ -11,6 +11,7 @@ class Loss(nn.Module):
     def __init__(self, weight=0.1):
         super(Loss, self).__init__()
         self.weight = weight
+        self.mse = torch.nn.MSELoss()
         self.loss_metrics = ('kld', 'nss', 'cc', 'sfne')
         self.cuda = True
         if self.cuda:
@@ -36,7 +37,7 @@ class Loss(nn.Module):
         sal = sal / (torch.reshape(max_sal, (sal.shape[0], 1)) + 1e-4)
 
         gt_sal = torch.reshape(gt, (gt.shape[0], gt.shape[1] * gt.shape[2] * gt.shape[3]))
-        saliency_loss = torch.mean(torch.square(((sal - gt_sal) / (1.1 - gt_sal)) + 1e-4))
+        saliency_loss = self.mse(input=sal, target=gt_sal)
         return saliency_loss
 
     def loss_list(self, pred_seq, fix, sal):
