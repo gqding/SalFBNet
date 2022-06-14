@@ -87,6 +87,7 @@ Dataset | #Image | #Training | #Val. | #Testing | Size | URL | Paper
 <img src="Figs/performance4.png" alt="input" style="width:600px">
 
 Please check the leaderboard of [SALICON2017](https://competitions.codalab.org/competitions/17136#results) for more details.
+
 Our model is shown with the user name "GQDing3".
 
 
