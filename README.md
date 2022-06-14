@@ -86,6 +86,9 @@ Dataset | #Image | #Training | #Val. | #Testing | Size | URL | Paper
 ### 3. Testing Performance on SALICON
 <img src="Figs/performance4.png" alt="input" style="width:600px">
 
+Please check the leaderboard of [SALICON2017]([https://saliency.tuebingen.ai/results.html](https://competitions.codalab.org/competitions/17136#results)) for more details, our model is shown with the user name "GQDing3".
+
+
 ### 4. Testing Performance on MIT300
 <img src="Figs/performance5.png" alt="input" style="width:600px">
 
