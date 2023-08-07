@@ -10,7 +10,7 @@
 This repository includes Pytorch implementation for the following paper:
 
 **SalFBNet: Learning Pseudo-Saliency Distribution via Feedback Convolutional Networks, IMAVIS 2022.**<br/>
-<a href="https://github.com/gqding" target="_blank">Guanqun Ding</a>, <a href="https://github.com/nevrez" target="_blank">Nevrez Imamoglu</a>, <a href="https://github.com/acaglayan" target="_blank">Ali Caglayan</a>, Masahiro Murakawa, <a href="https://www.airc.aist.go.jp/en/gsrt/" target="_blank">Ryosuke Nakamura</a>  
+<a href="https://github.com/gqding" target="_blank">Guanqun Ding</a>, <a href="https://github.com/nevrez" target="_blank">Nevrez Imamoglu</a>, <a href="https://github.com/acaglayan" target="_blank">Ali Caglayan</a>, <a href="https://ieeexplore.ieee.org/author/37323710400" target="_blank">Masahiro Murakawa</a>, <a href="https://www.airc.aist.go.jp/en/gsrt/" target="_blank">Ryosuke Nakamura</a>  
 ([Paper](https://www.sciencedirect.com/science/article/pii/S0262885622000245))
 ([arXiv](https://arxiv.org/abs/2112.03731)) 
 
