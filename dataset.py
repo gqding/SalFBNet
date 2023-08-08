@@ -235,25 +235,3 @@ def get_loader(img_root, label_root, img_size, batch_size, filename=None, mode='
         #                               pin_memory=pin)
         return dataset
 
-
-if __name__ == '__main__':
-    import numpy as np
-    import matplotlib.pyplot as plt
-
-    img_root = '/media/ra-pc/datadisk4tb1/Data/Datasets/2D_Image_Saliency/'
-    label_root = '/media/ra-pc/datadisk4tb1/Data/Datasets/2D_Image_Saliency/'
-    filename = '/media/ra-pc/datadisk4tb1/Data/Datasets/2D_Image_Saliency/Eye_Fixation_Val_MIT1003.lst'
-
-    loader = get_loader(img_root, label_root, None, batch_size=1, filename=filename, mode='train')
-    for image, label, fixation, nonfixation in loader:
-        print(np.array(image).shape)
-        plt.figure(0)
-        plt.imshow(np.transpose(np.asarray(np.squeeze(image.cpu().detach().numpy())), (1, 2, 0)))
-        plt.figure(1)
-        plt.imshow(np.asarray(np.squeeze(label.cpu().detach().numpy())))
-        plt.figure(2)
-        plt.imshow(np.asarray(np.squeeze(fixation.cpu().detach().numpy())))
-        plt.figure(3)
-        plt.imshow(np.asarray(np.squeeze(nonfixation.cpu().detach().numpy())))
-        plt.show()
-        break
