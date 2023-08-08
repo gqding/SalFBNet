@@ -189,32 +189,4 @@ class FBNet(nn.Module):
             init.constant_(m.bias, 0)
 
 
-if __name__ == '__main__':
-    net = FBNet(input_dim=3)
-    torch.nn.init.constant_(net.c_score_final.weight, 1.0 / 5.0)
-    torch.nn.init.constant_(net.score_smoothing.weight, 1.0 / (41.0*41.0))
-    print(net)
-    img = torch.randn(1, 3, 224, 384)
-    
-    from torchsummaryX import summary
-    summary(net, img)
-
-    # from thop import profile
-    # macs, params = profile(net, inputs=(img,))
-    # print(macs, params)
-    
-    net = net.to(torch.device('cuda:0'))
-    img = img.to(torch.device('cuda:0'))
-    out = net(img)
-
-    import time
-    all_time = 0
-    steps=100
-    for i in range(steps):
-        start_time = time.time()
-        out = net(img)
-        end_time = time.time()
-        all_time += (end_time - start_time)
-    mean_time = all_time / steps
-    print('time cost is: ' + str(mean_time))
 
