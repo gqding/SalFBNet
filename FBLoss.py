@@ -54,23 +54,3 @@ class Loss(nn.Module):
         loss_fusion = self.MSE_loss(pred_fusion, sal)
         return loss_fusion
 
-
-if __name__ == '__main__':
-    data_root='/media/ra-pc/datadisk4tb1/Data/Datasets/2D_Image_Saliency/SALICON/'
-    gt_map_root=os.path.join(data_root, 'maps', 'val')
-    gt_fix_root=os.path.join(data_root, 'fixations', 'val')
-    gt_map_list=sorted(glob.glob(os.path.join(gt_map_root, "*.png")))
-    gt_fix_list = sorted(glob.glob(os.path.join(gt_fix_root, "*.png")))
-    fbloss=Loss()
-
-    for gt_map_path, gt_fix_path in zip(gt_map_list, gt_fix_list):
-        t_transform = transforms.Compose([
-            transforms.ToTensor()])
-        gt_map = t_transform(Image.open(gt_map_path).convert('L'))
-        gt_map = torch.unsqueeze(gt_map, 0)   #[b, c, w, h]
-        gt_fix = t_transform(Image.open(gt_fix_path).convert('L'))
-        gt_fix = torch.unsqueeze(gt_fix, 0)  #[b, c, w, h]
-        pred=torch.randn(1, 1, 480, 640)
-        # pred = gt_map  # using log_softmax as input for the kld loss
-        loss=fbloss.forward(label=gt_map.to(fbloss.device), f_score=pred.to(fbloss.device), fix=gt_fix.to(fbloss.device), nonfix=gt_fix)
-        print('done')
