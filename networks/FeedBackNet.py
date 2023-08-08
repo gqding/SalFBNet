@@ -185,14 +185,3 @@ class FBNet(nn.Module):
             init.constant_(m.bias, 0)
 
 
-if __name__ == '__main__':
-    net = FBNet(input_dim=3)
-    torch.nn.init.constant_(net.c_score_final.weight, 1.0 / 5.0)
-    torch.nn.init.constant_(net.score_smoothing.weight, 1.0 / (41.0*41.0))
-    print(net)
-    img = torch.randn(1, 3, 480, 640)
-    net = net.to(torch.device('cuda:0'))
-    img = img.to(torch.device('cuda:0'))
-    out = net(img)    
-    print(out)
-    print(net.score_smoothing.weight)
