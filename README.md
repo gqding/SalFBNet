@@ -138,6 +138,6 @@ Please cite the following papers if you use our data or codes in your research.
 
     We use 5 models as our Pseudo-Annotators, including [DeepGazeIIE](https://github.com/matthias-k/DeepGaze), [UNISAL](https://github.com/rdroste/unisal), [MSINet](https://github.com/alexanderkroner/saliency), [EMLNet](https://github.com/SenJia/EML-NET-Saliency), [CASNetII](https://ncript.comp.nus.edu.sg/site/ncript-top/emotionalattention/).
 
-    We appriciate their public datasets and codes.
+    We appreciate their public datasets and codes.
 
 
